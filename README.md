@@ -1,6 +1,8 @@
 # MultiSort
 
-TODO: Write a gem description
+Many times I came across the requirements of sorting a array of hashes with one or more then one key's value of hash. I have wrote this gem which will accept the array of hashes as first parameter and array of keys to be sort by in a order.
+
+Will add more features to this gem such as type of sorting, sorting of different type of multi-level hashes etc.
 
 ## Installation
 
@@ -18,7 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    ARR_HASH = [{ foo: 'a', bar: 4 },
+    { foo: 'b', bar: 3 },
+    { foo: 'c', bar: 1 },
+    { foo: 'b', bar: 4 }]
+			
+    MultiSort.sort_by_order ARR_HASH, [:bar, :foo]
 
 ## Contributing
 
