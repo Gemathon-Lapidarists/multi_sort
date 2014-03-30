@@ -37,4 +37,18 @@ describe MultiSort do
  	sort_arr_hash.first.should == {:foo=>"a", :bar=>4}
  	sort_arr_hash.last.should == {:foo=>"d", :bar=>2}
  end
+
+ it "It should return a sorted array of hash as per the single sorty by key and DESC direction" do
+ 	sort_arr_hash = MultiSort.sort_by_order ARR_HASH_TWO, [:foo], 'DESC'
+ 	sort_arr_hash.first.should == {:foo=>"d", :bar => 2}
+ 	sort_arr_hash.last.should == {:foo=>"a", :bar => 1}
+ end
+
+ it "It should return a sorted array of hash as per the single sorty by key and DESC direction" do
+ 	sort_arr_hash = MultiSort.sort_by_order ARR_HASH_TWO, [:bar], 'DESC'
+ 	sort_arr_hash.first.should == {:foo=>"a", :bar => 4}
+ 	sort_arr_hash.last.should == {:foo=>"a", :bar => 1}
+ end
+
+
 end

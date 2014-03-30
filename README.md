@@ -27,6 +27,13 @@ Or install it yourself as:
 			
     MultiSort.sort_by_order ARR_HASH, [:bar, :foo]
 
+    Note: By default it will sort in ASC order
+    
+    If you Want to sort in DESC order. 
+
+    MultiSort.sort_by_order ARR_HASH, [:bar, :foo], "DESC"
+     
+
 ## Contributing
 
 1. Fork it
